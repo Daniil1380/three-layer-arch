@@ -12,8 +12,9 @@ public class StringController {
     @GetMapping(value = "/hello")
     public List<String> getString() {
         List<String> list = new ArrayList<>();
-        list
-
+        list.add("Ткаченко Даниил Юрьевич");
+        list.add("Петров Павел Петров");
+        return list;
     }
 
 }
