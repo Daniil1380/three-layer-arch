@@ -11,10 +11,10 @@ public class StringController {
 
     @GetMapping(value = "/hello")
     public List<String> getString() {
-        List<String> list = new ArrayList<>();
-        list.add("Ткаченко Даниил Юрьевич");
-        list.add("Петров Павел Петров");
+        StringService service = new StringService();
+        List<String> list = service.getList();
         return list;
     }
+    
 
 }
