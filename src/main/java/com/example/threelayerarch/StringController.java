@@ -14,8 +14,7 @@ public class StringController {
 
     @GetMapping(value = "/hello")
     public List<String> getString() {
-        List<String> list = service.getList();
-        return list;
+        return service.getList();
     }
 
 
